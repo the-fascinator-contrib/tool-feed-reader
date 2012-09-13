@@ -15,13 +15,13 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package au.edu.usq.fascinator.contrib.feedreader.printer;
+package com.googlecode.fascinator.contrib.feedreader.printer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import au.edu.usq.fascinator.contrib.feedreader.util.FeedHelper;
-import au.edu.usq.fascinator.contrib.feedreader.util.PlainTextExtractor;
+import com.googlecode.fascinator.contrib.feedreader.util.FeedHelper;
+import com.googlecode.fascinator.contrib.feedreader.util.PlainTextExtractor;
 import org.htmlparser.util.ParserException;
 import com.sun.syndication.feed.synd.SyndCategory;
 import com.sun.syndication.feed.synd.SyndContent;

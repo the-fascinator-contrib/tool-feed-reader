@@ -15,12 +15,12 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package au.edu.usq.fascinator.contrib.feedreader;
+package com.googlecode.fascinator.contrib.feedreader;
 
 import java.net.URL;
 import java.util.EventObject;
 
-import com.sun.syndication.fetcher.FetcherEvent;
+import org.rometools.fetcher.FetcherEvent;
 
 /**
  * Captures the changed state in a feed

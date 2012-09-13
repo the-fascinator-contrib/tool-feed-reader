@@ -16,7 +16,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-package au.edu.usq.fascinator.contrib.feedreader;
+package com.googlecode.fascinator.contrib.feedreader;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,16 +24,18 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashSet;
 
+import org.rometools.fetcher.FetcherEvent;
+import org.rometools.fetcher.FetcherException;
+import org.rometools.fetcher.FetcherListener;
+import org.rometools.fetcher.impl.DiskFeedInfoCache;
+import org.rometools.fetcher.impl.HttpURLFeedFetcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sun.syndication.feed.synd.SyndFeed;
-import com.sun.syndication.fetcher.FetcherEvent;
-import com.sun.syndication.fetcher.FetcherException;
-import com.sun.syndication.fetcher.FetcherListener;
-import com.sun.syndication.fetcher.impl.DiskFeedInfoCache;
-import com.sun.syndication.fetcher.impl.HttpURLFeedFetcher;
 import com.sun.syndication.io.FeedException;
+
+
 
 /**
  * Provides a basic interface to the ROME Fetcher library. To use this class:

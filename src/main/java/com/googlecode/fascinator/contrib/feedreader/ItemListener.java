@@ -15,15 +15,13 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package au.edu.usq.fascinator.contrib.feedreader;
+package com.googlecode.fascinator.contrib.feedreader;
 
 import java.net.URL;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.rometools.fetcher.FetcherEvent;
 
 import com.sun.syndication.feed.synd.SyndFeed;
-import com.sun.syndication.fetcher.FetcherEvent;
 
 /**
  * A basic change listener. Gives some functionality you may find useful in your
@@ -53,9 +51,9 @@ public class ItemListener implements FeedReaderStateChangeListener {
     /*
      * (non-Javadoc)
      * @see
-     * au.edu.usq.fascinator.contrib.feedreader.FeedReaderStateChangeListener
+     * com.googlecode.the-fascinator.contrib.feedreader.FeedReaderStateChangeListener
      * #feedReaderStateChangeEvent
-     * (au.edu.usq.fascinator.contrib.feedreader.FeedReaderStateChangeEvent)
+     * (com.googlecode.the-fascinator.contrib.feedreader.FeedReaderStateChangeEvent)
      */
     @Override
     public void feedReaderStateChangeEvent(FeedReaderStateChangeEvent event) {

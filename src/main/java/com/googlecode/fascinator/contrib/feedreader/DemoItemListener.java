@@ -15,9 +15,8 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package au.edu.usq.fascinator.contrib.feedreader;
+package com.googlecode.fascinator.contrib.feedreader;
 
-import au.edu.usq.fascinator.contrib.feedreader.printer.JSONPrinter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -30,21 +29,21 @@ import java.util.Properties;
 import org.apache.velocity.exception.ParseErrorException;
 import org.apache.velocity.exception.ResourceNotFoundException;
 import org.htmlparser.util.ParserException;
+import org.rometools.fetcher.FetcherEvent;
+import org.rometools.fetcher.impl.DiskFeedInfoCache;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import au.edu.usq.fascinator.contrib.feedreader.printer.HTMLPrinter;
-import au.edu.usq.fascinator.contrib.feedreader.printer.RDFPrinter;
-import au.edu.usq.fascinator.contrib.feedreader.util.FeedHelper;
-import au.edu.usq.fascinator.contrib.feedreader.util.PlainTextExtractor;
-
+import com.googlecode.fascinator.contrib.feedreader.printer.HTMLPrinter;
+import com.googlecode.fascinator.contrib.feedreader.printer.JSONPrinter;
+import com.googlecode.fascinator.contrib.feedreader.printer.RDFPrinter;
+import com.googlecode.fascinator.contrib.feedreader.util.FeedHelper;
+import com.googlecode.fascinator.contrib.feedreader.util.PlainTextExtractor;
 import com.sun.syndication.feed.synd.SyndCategory;
 import com.sun.syndication.feed.synd.SyndContent;
 import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndLink;
 import com.sun.syndication.feed.synd.SyndPerson;
-import com.sun.syndication.fetcher.FetcherEvent;
-import com.sun.syndication.fetcher.impl.DiskFeedInfoCache;
 
 /**
  * A demonstration listener to illustrate the fields being returned. You'll
