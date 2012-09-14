@@ -47,7 +47,7 @@ import com.sun.syndication.io.FeedException;
  * </ol>
  * 
  * @author Duncan Dickinson
- * @see <a href="http://wiki.java.net/bin/view/Javawsxml/RomeFetcher">Rome Fetcher</a>
+ * @see <a href="http://wiki.java.net/bin/view/Javawsxml/RomeFetcher">Rome Fetcher</a> 
  */
 public class Feed implements FetcherListener, Runnable {
 
