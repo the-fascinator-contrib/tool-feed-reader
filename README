@@ -1,5 +1,5 @@
 This code is a little unloved and may need some TLC to get it to work.
- 
+
 To run feed-reader:
 
 mvn clean install
